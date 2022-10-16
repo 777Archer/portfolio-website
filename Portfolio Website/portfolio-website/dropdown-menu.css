@@ -1,0 +1,110 @@
+:root{
+	--mainColor: #eaeaea;
+	--secondaryColor: #fff;
+
+	--borderColor: #c1c1c1;
+	
+	--mainText: black;
+	--secondaryText: #4b5156;
+
+	--themeDotBorder: #24292e;
+
+	--previewBg: rgb(251, 249,243,0.8);
+	--previewShadow: #f0ead6;
+
+	--submitButtonColor: black;
+
+	--menuHoverColor: #E6BFAD;
+	--menuHoverBackgroundColor: #c9ffe5;
+}
+
+
+nav p{
+	font-family: 'Russo One', sans-serif;
+	color: #222;
+	font-size: 24px;
+	line-height: 55px;
+	float: left;
+	padding: 0px 20px;
+}
+
+nav ul{
+	float:  left;
+
+}
+
+nav ul li{
+	float: left;
+	list-style: none;
+	position: relative;
+}
+
+nav ul li a{
+	display: block;
+	font-family: 'Russo One', sans-serif;
+	color: black;
+	font-size: 14px;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+
+nav ul li ul{
+	display: none;
+	position: absolute;
+	background-color: #c0c0c0;
+	padding: 8px;
+	border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul li{
+	width: 65px;
+	border-radius: 4px;
+}
+
+
+nav ul li ul li a{
+		padding: 8px 14px;
+		border-radius: 4px;
+}
+
+nav ul li ul li a:hover{
+		background-color: #5d89ba;/*This color is khaki*/
+		/*background-color: #7FFF7F;*/ /*This color is green*/
+
+}
+
+nav ul li:hover{
+		background-color: #0047ab;
+		/*background-color: var(--menuHoverBackgroundColor);*/
+
+}
+
+p{
+	margin: 0;}
+
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+@media screen and (max-width:  1200px){
+	.main-container{
+		width: 95%;
+	}
+}
+
+
+@media screen and (max-width:  800px){
+	.intro-wrapper{
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			'nav-wrapper'
+			'left-column'
+			'right-column'
+		;
+	}

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cybersecurity Project</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+		<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="dropdown-menu.css">
+		<link rel="stylesheet" type="text/css" href="default.css">
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		<style type="text/css">
+			<link id="theme-style" rel="stylesheet" type="text/css" href="">
+			.img-container{
+				max-width: 600px;
+			}
+
+			img{
+				width: 60%
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="nav-wrapper">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+			<ul id="navigation">
+			<nav>
+				<ul>
+					<li><a href="index.html#home">Home</a></li>	
+						<li><a href="#">Project&#9660;</a>
+							<ul>
+									<li><a href="amazon-web-services.html#amazon-web-services">AWS</a></li>
+									<li><a href="object-oriented-projects.html#object-oriented-projects">OOP</a></li>
+									<li><a href="information-technology.html#information-technology">I.T.</a></li>
+								</ul>
+						</li>
+						<!-- <li><a target="_blank" href="resume.pdf">Resume</a></li> -->
+						<!-- <li><a href="aboutme.html">About me</a></li> -->
+						<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</ul>
+		</div>
+
+		<div class="main-container">
+			<h3><center>Reconnaissance with Nmap & Amap</center></h3>
+			<br>
+			<br>
+			<h5>Introduction</h5>
+			<p>What was accomplished in this lab was the utilization of Nmap (the network mapper), to perform basic network port scanning and overwatch. Furthermore, I used Amap (application mapper) tool to figure out which applications were running on listening ports.</p>
+			<br>
+			<br>
+			<h5>1. Kali Linux Virtual Machine</h5>
+	
+			<div class="img-container">
+				<img src="cybersecurity-labs/lab-one/man-nmap.jpg">
+			</div>
+
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-length:60.5%; max-height:1000px; border:1px solid black; background-color: #c9ffe5;"><br>To lunch Wireshark, I execute the command <strong>wireshark</strong> 		from within the terminal.<p></p><br>
+			</div>
+			<br>
+			<h5>2. Wireshark</h5>
+			<div class="img-container">
+				<img src="cybersecurity-labs/lab-one/wireshark-terminal.jpg">
+			</div>
+
+			<div class="img-container">
+				<img src="cybersecurity-labs/lab-one/wireshark.jpg">
+			</div>
+			<br>
+
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-length:60.5%; max-height:1000px; border:1px solid black; background-color: #c9ffe5;"><br>To lunch Wireshark, I execute the command <strong>wireshark	</strong> from within the terminal.<p></p><br>
+			</div>
+			<br>
+			<br>
+			<h5>3. Capture panel</h5>
+			<div class="img-container">
+				<img src="cybersecurity-labs/lab-one/capture-panel1.jpg"></div>
+			<div class="img-container">
+				<img src="cybersecurity-labs/lab-one/capture-panel2.jpg">
+			</div>
+			
+			
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black; background-color: #c9ffe5;"><br><p>What I want to do now is select my ethernet port (eth0) in order to do this, I clicked on the Capture panel, then I clicked on Interfaces, from there I selected <strong>eth0</strong>, then I clicked on <strong>Start</strong> in order to initiate Wireshark's capturing process.</p><br>
+			</div>To be continued...
+			<h5></h5>
+			<!--<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>
+
+			
+			<h5></h5>
+			<div class="img-container">
+				<img src="">
+			</div>
+			<div style="margin-left:0%; margin-right:0%; max-width:60%; max-height:1000px; border:1px solid black;background-color: #c9ffe5;"><br><p></p><br>
+			</div>
+			<br>-->
+
+			
+			
+
+
+			</div>
+		<script type="text/javascript" src="script.js"></script>			
+	</body>
+</html>

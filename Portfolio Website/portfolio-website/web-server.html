@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Server</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="stylesheet" type="text/css" href="dropdown-menu.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	
+	
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+		
+	</style>
+
+</head>
+<body>
+		<div class="nav-wrapper">
+		
+			<div class="dots-wrapper">
+					<div id="dot-1" class="browser-dot"></div>
+					<div id="dot-2" class="browser-dot"></div>
+					<div id="dot-3" class="browser-dot"></div>
+				</div>
+
+				<ul id="navigation">
+					<nav>
+						<ul>
+							<li><a href="index.html#home">Home</a></li>	
+							<li><a href="#">Project&#9660;</a>
+								<ul>
+									<li><a href="amazon-web-services.html#amazon-web-services">AWS</a></li>
+									<li><a href="object-oriented-projects.html#object-oriented-projects">OOP</a></li>
+									<li><a href="information-technology.html#information-technology">I.T.</a></li>
+								</ul>
+							</li>
+							<!-- <li><a target="_blank" href="resume.pdf">Resume</a></li> -->
+							<!--<li><a href="aboutme.html">About me</a></li>-->
+							<li><a href="index.html#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</ul>
+			</div>
+
+				<div class="main-container">
+					<br>
+
+						<h3><center>Web Server</center></h3>
+
+						<p><strong><u>Task:</u></strong> Deploy and Update CloudFormation by using automation to make changes in your cloud infrastructure, such as deploying and editing a CloudFormation template.<br><br> 
+
+						Using a CloudFormation template, deploy and modify a VPC, an S3 bucket and an EC2 instance running a simple web server.</p><br><br>
+
+						<h5>CloudFormation Stack</h5>
+						<div class="img-container">
+							<img src="fault-isolation/pic1-notepad-plus-plus.jpg">
+						</div>
+						<p><br>I will begin by deploying a CloudFormation stack that creates a simple VPC. But first, I need to download the <u>simple_stack.yaml</u> CloudFormation template and open it in a Text Editor, the text editor I will download and use is Notepad++.</p><br><br>
+
+						<h5>VPC (Amazon Virtual Private Cloud)</h5>
+						<div class="img-container">
+							<img src="web-server/pic2-simplevpc.jpg">
+						</div>
+
+						<div class="img-container">
+							<img src="web-server/pic3-simplevpc.jpg">
+						</div>
+
+						<p><br>Information about the CloudFormation <u>simple_stack.yaml</u> template. <br><li>It is a VPC (Amazon Virtual Private Cloud)</li> <li>It has a logical ID known as <u>SimpleVPC</u></li> <li>It has a Type which tells CloudFormation which type of resource to create</li> <li>And it has Properties that define the values used to create the VPC</li></p><br><br>
+
+						<h5>Prerequisite - Prepare Template</h5>
+						<div class="img-container">
+							<img src="web-server/aws-cloudformation.jpg"><br><br>
+						</div>
+
+						<p><br><br>I launched a <u>CloudFormation</u> stack that will deploy AWS resources in my AWS account using the <u>simple_stack.yaml template</u>.<br><br></p><br><br><br><br>
+
+						<h5>Specify Stack Details</h5>
+						<div class="img-container">
+							<img src="web-server/specify-stack-details.jpg">
+						</div>
+						<p><br>Reviewed and ensured that the stack details were correct. For the <u>Stack name</u> field, I inputted <u>CloudFormationLab.</u></p><br><br><br><br>
+
+						<h5>Configure Stack Options</h5>
+						<div class="img-container">
+							<img src="web-server/configure-stack-options.jpg">
+						</div>
+
+						<p><br>Configure stack options. I entered Owner in the left column which is the key, and my email address in the right column which is the value. I will not use additional permissions or advanced options so I clicked Next.</p><br><br>
+
+
+						<h5>Review</h5>
+						<div class="img-container">
+							<img src="web-server/review-cloudformationlab.jpg">
+						</div>
+						<p><br>Reviewed the stack configuration <u>CloudFormationLab</u> before I clicking on <u>Create stack</u></p><br><br><br>
+
+						<h5>CloudFormationLab Stack Created</h5>
+						<div class="img-container">
+							<img src="web-server/cloudformationlab-created.jpg">
+						</div>
+						<p><br><br>Both <u>CloudFormationLab</u> and <u>SimpleVPC</u> stacks are now created.</p>
+						<br>
+						<br>
+						
+						<h5>Updating Parameters</h5>
+						<div class="img-container">
+							<img src="fault-isolation/updating-parameters.jpg">
+						</div>
+						<br><br><li>Navigate to the AWS CloudFormation console </li> 
+						<li>Select Stacks</li>	
+						<li>Tick the created stack name (e.g. <u>CloudFormationLab</u> is my stack name)</li>
+						<li>Select Update</li>
+						<li>Left Use current template selected</li>
+						<br>
+						<br>
+						<br>
+						
+						
+						<h6>Specifying Stack Details</h6>
+						<div class="img-container">
+							<img src="fault-isolation/specify-stack-details-simpleapp1.jpg">
+						</div>
+						<br><li>Clicked <strong>Next</strong></li>
+						<li>On the Specify stack details screen I now have the opportunity to change the Parameters</li>
+						<li>Changed <u>PublicEnabledParam</u> to true</li>
+						<li>Changed <u>EC2SecurityEnabledParamo</u> true</li>
+						<li>Clicked <strong>Next</strong></li>
+						<li>Clicked <strong>Next</strong> again, until directed to the Review <u>CloudFormationLab</u> screen</li>
+						<li>Scrolled down to <u>Change set preview</u> and noted several resources are being added</li>
+						<li>At the bottom of the page, selected <u>I acknowledge that AWS CloudFormation might create IAM resources with custom names</u></li> 
+						<li>Clicked Create stack</p></li>
+						<br>
+						<br>
+						<br>
+
+						<h5>Configure Stack Options</h5>
+						<div class="img-container">
+							<img src="fault-isolation/default-configure-stack-options.jpg">
+						</div>
+						<p><br>Settings for <u>Configure stack options</u> left as is.</p>
+						<br>
+						<br>
+						<br>
+
+						<h5>Review CloudFormationLab</h5>
+						<div class="img-container">
+							<img src="fault-isolation/review-cloudformationlab-template.jpg">
+						</div>
+						<br>
+						<br>
+						<br>
+						<p>To be continued</p>
+
+						<!--<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+						
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+												
+						
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+												
+						
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+												
+						
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+												
+						
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+												
+						
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+												
+						
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="main-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<h5></h5>
+						<div class="img-container">
+							<img src="">
+						</div>
+						<br>
+						<br>
+						<br>
+
+						<p></p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

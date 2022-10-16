@@ -1,0 +1,39 @@
+  p
+  {
+    font-family: Roboto; /*Visual style for all texts within the "<p></p>" element.*/
+    margin-top: 0; /*Paragraphs ("<p></p>") by default come with their own margin space for the top, and its own margin space for the bottom.*/
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .video-title
+  {
+    font-size: 18px; /*How large you want the text to be*/
+    font-weight: bold; /*To make texts bold*/
+    font-style: italic; /*In order to italize texts*/
+    width: 289px; /*Width of the text in order to force it onto a second line*/
+    line-height: 24px; /*To adjust the spacing between lines of the texts*/
+    margin-bottom: 5; /*To remove the default margin at the bottomof "<p>The Power That Petrified Everyone!</p>"and specify your own margin space*/
+  }
+
+  .visual-stats
+  {
+    font-size: 14px;
+    color: rgb(96, 96, 96); /*Color of the text*/
+    margin-bottom: 20px; /*To remove the default margin at the top of"<p>6.4M views &#183 1 year ago</p>"and specify your own margin space*/
+  }
+
+  .video-author
+  {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 20px;
+  }
+
+  .video-description
+  {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    width: 300px;
+    line-height: 22px;
+  }

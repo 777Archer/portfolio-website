@@ -1,0 +1,17 @@
+:root{
+	--mainColor: #606B56;
+	--secondaryColor: #ffff00;
+
+	--borderColor: #0000FF;
+	
+	--mainText:#0000FF;
+	--secondaryText:#0000FF;
+
+	--themeDotBorder: #FFF;
+
+	--previewBg: #a4c639;
+	--previewShadow: #a4c639;
+
+	--submitButtonColor: #0000FF;
+	--downloadResume: red;
+}

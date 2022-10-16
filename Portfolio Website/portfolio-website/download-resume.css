@@ -1,0 +1,75 @@
+:root{
+  --mainColor: #eaeaea;
+  --secondaryColor: #fff;
+
+  --borderColor: #c1c1c1;
+  
+  --mainText: black;
+  --secondaryText: #4b5156;
+
+  --themeDotBorder: #24292e;
+
+  --previewBg: rgb(251, 249,243,0.8);
+  --previewShadow: #f0ead6;
+
+  --submitButtonColor: black;
+}
+
+
+.download-resume{
+border-color: #17a2b8;
+background-color: var(--previewShadow);
+color: var(--mainText);
+border-radius: 4px;/*Changes the shape of "Choose Your Color" dots*/
+border-style: solid;
+font-size: 14px; /* Increase font size */
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+
+border-width: 1px;
+  cursor: pointer;
+}
+
+.download-resume:hover{
+  background-color: rgb(41, 118, 211);
+    color: white;
+    opacity: 0.8;
+    border-width: 0px; /*Changes zoom-in size of "Choose Your Color" dots*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.60);
+  }
+
+  .download-resume:active{
+    opacity: 0.5;
+  }
+
+.github{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  border-color: #17a2b8;
+  background-color: var(--previewShadow);
+  border-radius: 4px;/*Changes the shape*/
+  border-style: solid;
+  color: var(--mainText);
+  margin: 5px;
+  font-size: 14px; /* Increase font size */
+
+border-width: 1px;
+  cursor: pointer;
+}
+
+.github:hover{
+  border-width: 0px; /*Changes zoom-in size*/
+  background-color: rgb(41, 118, 211);
+    color: white;
+    opacity: 0.8;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.60);
+  }
+
+  .github:active{
+    opacity: 0.5;
+  }

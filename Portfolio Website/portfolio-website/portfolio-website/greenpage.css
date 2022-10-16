@@ -1,0 +1,16 @@
+:root{
+	--mainColor: #606B56;
+	--secondaryColor: #ffff00;
+
+	--borderColor: #00ff00;
+	
+	--mainText: #000000;
+	--secondaryText: #00ffff
+
+	--themeDotBorder: #FFF;
+
+	--previewBg: #008080;
+	--previewShadow: #2a2f25;
+
+	--submitButtonColor: #17a2b8;
+}

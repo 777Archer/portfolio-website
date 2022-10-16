@@ -1,0 +1,7 @@
+.flex-one {
+  margin-top: 30px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+
+}
