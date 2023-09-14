@@ -5,12 +5,15 @@
 
   
   # About Me
-   ![about-me-screenshot](https://github.com/777Archer/portfolio-website/assets/101377287/9893bc70-6b20-4494-8112-7dcc69c028a0)
+   ![about-me-screenshot](https://github.com/777Archer/portfolio-website/assets/101377287/fcc68238-a1a0-41db-b017-f4f08563f1a0)
+
+
 
   
   # Projects
-  <img width="800" src="https://user-images.githubusercontent.com/101377287/196083049-846340dc-6763-4394-aa0d-68bbedbe3c63.png"/> 
+  ![project-screenshot](https://github.com/777Archer/portfolio-website/assets/101377287/ade5e4fd-b19f-40dc-b9f9-d88cc46186a9)
+
   
   # Contact Form
-  <img width="800" src="https://user-images.githubusercontent.com/101377287/196083112-6eb42a91-453b-4181-b98a-fc551a85c87a.png"/> 
-  </table
+  ![contact-me-screenshot](https://github.com/777Archer/portfolio-website/assets/101377287/be822d5f-254d-4e0e-b232-e5791196919c)
+
